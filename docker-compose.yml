@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  ui:
+    image: seo-link-checker-ui:1.0.0
+    build: ./frontend
+    container_name: FlowchartUI
+    restart: always
+    ports:
+      - "3200:80"
+      
+  api:
+    image: ...
+    build: ./Backend
+    container_name: FlowchartAPI
+    restart: always
+    volumes:
+      - ./backend/:/app/api/
+    ports:
+      - "3201:5000"
+      
