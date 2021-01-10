@@ -11,7 +11,7 @@ services:
       
   api:
     image: ...
-    build: ./Backend
+    build: ./backend
     container_name: FlowchartAPI
     restart: always
     volumes:
