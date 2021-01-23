@@ -1,0 +1,60 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+
+
+// Global
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100vw;
+}
+
+.grid-container {
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "nav content content content content content";
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .content {
+    grid-area: content;
+  }
+}
+
+// Navigation
+.nav {
+  width: 100%;
+  background: #333;
+
+  a {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+  }
+}
+
+// Content
+.content {
+  background: #fff;
+  background-image: radial-gradient(#ccc 10%, rgba(255, 255, 255, 0.5) 10%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  padding: 2rem;
+
+}
