@@ -49,6 +49,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.nav a:hover {
+  color: #ccc;
+}
+
 .content {
   background: #fff;
   background-image: radial-gradient(#ccc 10%, rgba(255, 255, 255, 0.5) 10%);

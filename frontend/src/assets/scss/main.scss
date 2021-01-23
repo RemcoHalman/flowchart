@@ -46,6 +46,9 @@ body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 
+    &:hover {
+      color: #ccc
+    }
   }
 }
 
